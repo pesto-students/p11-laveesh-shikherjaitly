@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Join Our Social Network</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Join Our Social Network</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="about">About Me</label>
+        <textarea id="about" name="about" rows="3" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="picture">Profile Picture</label>
+        <input type="file" id="picture" name="picture">
+      </div>
+      <div>
+        <input type="submit" value="Join">
+      </div>
+    </form>
+  </body>
+</html>

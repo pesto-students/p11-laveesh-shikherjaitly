@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: brown;
+
+}
+
+#gameData {
+    margin-left: 45%;
+    display: inline-block;
+    border: 1px solid red;
+    /* width: 100px; */
+    padding: 10px;
+    height: 50px;
+}
+
+#radioButton {
+    display: inline-block;
+    
+}
