@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <div class='divId'>
+            <button onclick="handlefunction()">
+            CLick Me
+            </button>
+        </div>
+        <script>
+            function handlefunction()
+                {​​
+                var test=document.getElementByClassName('divId');
+                test.style.background='black';
+                }​​
+        </script>
+        <script>
+            function getElements() {
+              var x = document.getElementsByName("x");
+              document.getElementById("demo").innerHTML = x.length;
+            }
+            </script>
+            </head>
+            <body>
+
+            <p>
+            Cats: <input name="x" type="radio" value="Cats">
+            Dogs: <input name="x" type="radio" value="Dogs">
+            </p>
+            
+            <p>
+            <input type="button" onclick="getElements()" value="How many elements named x?">
+            </p>
+
+            <p id="demo"></p>
+    </body>
+</html> 
