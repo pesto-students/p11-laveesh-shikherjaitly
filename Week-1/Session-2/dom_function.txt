@@ -1,0 +1,21 @@
+DOM manipulation functions allow developers to access and modify the content, structure, and styling of web pages using JavaScript. Here are some of the most common DOM manipulation functions:
+
+document.getElementById(): This function allows developers to select an element with a specific ID attribute and returns a reference to the element.
+
+document.getElementsByClassName(): This function allows developers to select elements with a specific class name and returns an array-like object of all the matching elements.
+
+document.getElementsByTagName(): This function allows developers to select elements with a specific tag name and returns an array-like object of all the matching elements.
+
+document.querySelector(): This function allows developers to select the first element that matches a specific CSS selector and returns a reference to the element.
+
+document.querySelectorAll(): This function allows developers to select all the elements that match a specific CSS selector and returns an array-like object of all the matching elements.
+
+element.innerHTML(): This function allows developers to get or set the HTML content of an element, including its child elements.
+
+element.textContent(): This function allows developers to get or set the plain text content of an element, excluding its child elements.
+
+element.setAttribute(): This function allows developers to set an attribute of an element, such as its class, id, or style.
+
+element.addEventListener(): This function allows developers to attach event listeners to an element, which can then trigger a function when a specific event occurs, such as a mouse click or a key press.
+
+element.appendChild(): This function allows developers to add a new child element to an existing element.
