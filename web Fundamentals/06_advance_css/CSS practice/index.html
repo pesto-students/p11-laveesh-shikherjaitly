@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CSS Practice</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+      }
+
+      h1 {
+         font-size: 16pt;
+         color: blue;
+         font-style: italic;
+      }
+
+      #container {
+         width: 600px;
+         height: 320px;
+         border: 2px solid blue;
+         padding: 5px;
+         background-color: #F0F0F0;
+      }
+
+      .verse {
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+      }
+
+      #yellow-section {
+         background-color: yellow;
+         float: left;
+         width: 200px;
+         padding: 10px;
+         margin-right: 10px;
+      }
+
+      #no-background {
+         /* No specific styling for this section */
+      }
+
+      #orange-section {
+         background-color: orange;
+         position: absolute;
+         top: 200px;
+         left: 110px;
+         width: 200px;
+         padding: 10px;
+      }
+
+      #orange-red-section {
+         background-color: rgb(255, 80, 0);
+         color: white;
+         float: right;
+         width: 200px;
+         padding: 10px;
+         margin-right: 40px;
+         margin-top: 20px;
+      }
+   </style>
+</head>
+<body>
+   <div id="container">
+      <h1>Yesterday</h1>
+      <div id="yellow-section" class="verse">
+         <p>Yesterday, All those backups seemed a waste of pay. Now my database has gone away. Oh I believe in yesterday.</p>
+      </div>
+      <div id="no-background" class="verse">
+         <p>Suddenly, There's not half the files there used to be, And there's a milestone hanging over me. The system crashed so suddenly. I pushed something wrong, What it was I could not say.</p>
+      </div>
+      <div id="orange-section" class="verse">
+         <p>Now all my data's gone and I long for yesterday-ay-ay-ay.</p>
+      </div>
+      <div id="orange-red-section" class="verse">
+         <p>Yesterday, The need for back-ups seemed so far away. I knew my data was all here to stay, Now I believe in yesterday.</p>
+      </div>
+   </div>
+</body>
+</html>
