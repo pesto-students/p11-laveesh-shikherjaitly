@@ -1,46 +1,20 @@
 const express = require('express');
-const PORT = 3000;
+const bodyParser = require('body-parser');
+const routes = require('./routes');
+const middlewares = require('./middlewares');
 
-const app =  express();
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-const tasks = [{
-    id:1,
-    title:"random",
-    description: "This is a random task",
-    completed: "Yes"
-},
-{   
-    id:2,
-    title:"random2",
-    description: "This is a random2 task",
-    completed: "No"
-}
-]
+app.use(bodyParser.json());
+app.use(middlewares.requestLogger);
 
-app.get("/tasks" ,(req, res)=> {
-    res.send(tasks);
-});
+// Set up routes
+app.use('/', routes); // Use the router at the root level
 
-app.post("/tasks", (req,res)=>{
-    //Create new tasks
-    let newTask= req.body;
-    tasks.push(newTask);
-
-    res.status(201).json(newTask);
-});
-
-app.get("/tasks/:id",(req,res)=>{
-    const id = parseInt(req.params.id);
-  const task = tasks.find(tasks => tasks.id === id);
-  if (task) {
-    res.json(task);
-  } else {
-    res.status(404).json({ error: 'task not found' });
-  }
-});
-
+// 404 middleware
+app.use(middlewares.handle404);
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
